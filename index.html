@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  width: 50%;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>Ang Lee Chuan</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-
-<h2>Opacity with Box</h2>
-<p>Hover over the image to see the effect.</p>
-
-<div class="container">
-  <img src="https://media-exp1.licdn.com/dms/image/C5603AQEKeEvw-xzQFA/profile-displayphoto-shrink_400_400/0/1643368023599?e=1675296000&v=beta&t=G4NEMz3H_Hjk4UyW6Vfyf44k1cQhgQQfcL1g1Ww4r1k" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">This is me!</div>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Lee Chuan.</h1>
+      <h2>welcome to my website!</h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
   </div>
-</div>
-  
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/leechuan.png" alt="leechuan-profile-img">
+      <h2>Hello.</h2>
+      <p class="intro">I am an engineer, currently learning how to code with HTML.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="code-img" src="https://media.giphy.com/media/3p50WGyUqeU5W/giphy.gif" alt="code-img">
+
+        <h3>Design & Development</h3>
+        <p>I started learning to code when I was 12 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+
+      </div>
+      <div class="skill-row">
+        <img class="chilli-img" src="images/chillies.png" alt="chillies-img">
+
+        <h3>Hot Wings Challenge</h3>
+        <p>But my best skill is actually in eating hot wings. I am the undisputed queen of hot wing challenges. Ghost Peppers and Carolina Reapers are my favourite snacks.</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love hot wings as much as I do.</h3>
+      <p class="contact-message">Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
+      <a class="btn" href="mailto:ilove@hotwings.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/aleechuan/">LinkedIn</a>
+    <a class="footer-link" href="https://www.instagram.com/leee_chuan/">Instagram</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+  </div>
 </body>
+
 </html>
