@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQEKeEvw-xzQFA/profile-displayphoto-shrink_400_400/0/1643368023599?e=1675296000&v=beta&t=G4NEMz3H_Hjk4UyW6Vfyf44k1cQhgQQfcL1g1Ww4r1k" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">This is me!</div>
+  </div>
+</div>
+  
+</body>
+</html>
